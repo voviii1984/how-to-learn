@@ -324,14 +324,17 @@
 }
 
 .footer__column-links {
-  line-height: 30px;
-  font-size: 18px;
   padding: 0;
   margin-top: 20px;
   margin-bottom: 16px;
+  list-style: none;
+}
+
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
   font-weight: normal;
   text-decoration: none;
-  list-style: none;
   color: white;
 }
 
