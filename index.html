@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -44,7 +44,7 @@
           </div>
 
           <div class="cards__item">
-            <img src="./images/images_sprint-2/cards-recall.png" alt="Recall" class="cards__image">
+            <img src="./images/images_sprint-2/cards-recall.png" alt="Отзыв" class="cards__image">
             <h4 class="cards__title">Recall</h4>
             <p class="cards__description">Вспоминайте изученное - это позволит соеденить разрозненные порции памяти.</p>
           </div>
@@ -70,15 +70,11 @@
       </section>
 
       <section class="video">
-        <h3 class="section-title">Видео на TED</h3>
+        <h2 class="section-title">Видео на TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
-          <div class="video__iframe">
-            <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-            <div class="video__iframe">
-              <iframe src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section> 
 
@@ -99,7 +95,7 @@
       </section>
 
       <section class="digits">
-        <h3 class="section-title">Цифры и факты</h3>
+        <h2 class="section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учебу и мозг</p>
         
         <div class="table"> <!--Блок из 8 карточек-->
@@ -225,17 +221,17 @@
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
 
         <div class="resources__logo-zone">
-          <a href="#" class="resources__logo-link">
-            <img src="./images/images_sprint-2/logo/resources-arzamas.svg" alt="Arzamas" class="resources__log">
+          <a href="#" target="_blank" class="resources__logo-link">
+            <img src="./images/images_sprint-2/logo/resources-arzamas.svg" alt="Арзамас" class="resources__logo">
           </a>
-          <a href="#" class="resources__logo-link">
-            <img src="./images/images_sprint-2/logo/resources-n1.svg" alt="N+1" class="resources__log">
+          <a href="#" target="_blank" class="resources__logo-link">
+            <img src="./images/images_sprint-2/logo/resources-n1.svg" alt="N+1" class="resources__logo">
           </a>
-          <a href="#" class="resources__logo-link">
-            <img src="./images/images_sprint-2/logo/resources-strelka.svg" alt="STRELKA" class="resources__log">
+          <a href="#" target="_blank" class="resources__logo-link">
+            <img src="./images/images_sprint-2/logo/resources-strelka.svg" alt="СТРЕЛКА" class="resources__logo">
           </a>
-          <a href="#" class="resources__logo-link">
-            <img src="./images/images_sprint-2/logo/resources-polka.svg" alt="ПОЛКА" class="resources__log">
+          <a href="#" target="_blank" class="resources__logo-link">
+            <img src="./images/images_sprint-2/logo/resources-polka.svg" alt="ПОЛКА" class="resources__logo">
           </a>
         </div>
       </section>
@@ -248,22 +244,26 @@
           <p class="footer__author">&copy;2020. Владмир Ляпин</p>
         </div>
 
-        <nav class="footer__column footer__column_content_info">
+        <div class="footer__column footer__column_content_info">
           <h4 class="footer__column-heading">О Практикуме</h4>
-          <ul class="footer__column-links">               
-            <li><a href="#" class="footer__column-link">Главная</a></li>
-            <li><a href="#" class="footer__column-link">Концепция</a></li>
-            <li><a href="#" class="footer__column-link">Наставники</a></li>
-          </ul>
-        </nav>
+          <nav>
+            <ul class="footer__column-links">               
+              <li><a href="#" class="footer__column-link">Главная</a></li>
+              <li><a href="#" class="footer__column-link">Концепция</a></li>
+              <li><a href="#" class="footer__column-link">Наставники</a></li>
+            </ul>
+          </nav>
+        </div>
 
         <div class="footer__column footer__column_content_social">
           <h4 class="footer__column-heading">Соцсети</h4>
-          <ul class="footer__column-links">                
-            <li><a href="#" class="footer__column-link"><img src="./images/facebook_color_white.svg" alt="Facebook" class="footer__social-icon">Facebook</a></li>
-            <li><a href="#" class="footer__column-link"><img src="./images/vk_color_white.svg" alt="ВКонтакте" class="footer__social-icon">ВКонтакте</a></li>
-            <li><a href="#" class="footer__column-link"><img src="./images/instagram_color_white.svg" alt="Instagram" class="footer__social-icon">Instagram</a></li>
-          </ul> 
+          <nav>
+            <ul class="footer__column-links">                
+              <li><a href="#" target="_blank" class="footer__column-link"><img src="./images/facebook_color_white.svg" alt="Facebook" class="footer__social-icon">Facebook</a></li>
+              <li><a href="#" target="_blank" class="footer__column-link"><img src="./images/vk_color_white.svg" alt="ВКонтакте" class="footer__social-icon">ВКонтакте</a></li>
+              <li><a href="#" target="_blank" class="footer__column-link"><img src="./images/instagram_color_white.svg" alt="Instagram" class="footer__social-icon">Instagram</a></li>
+            </ul> 
+          </nav>
         </div>                    
       </div>
 
